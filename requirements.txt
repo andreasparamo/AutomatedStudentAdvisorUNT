@@ -1,0 +1,32 @@
+# Flask and related libraries
+Flask==3.1.0
+Werkzeug==3.1.3
+Jinja2==3.1.5
+click==8.1.8
+itsdangerous==2.2.0
+MarkupSafe==3.0.2
+
+# Frontend server
+waitress==3.0.2
+
+# Environment variable management
+python-dotenv==1.0.1
+
+# AI/ML and data processing
+tensorflow==2.13.0   # Add TensorFlow for the chatbot model
+numpy==1.24.0        # Numerical operations for preprocessing
+pandas==1.5.3        # Optional: Data handling for analytics or logging
+
+# HTTP requests (if API integrations are needed)
+requests==2.32.3
+
+# Character encoding (used by requests)
+charset-normalizer==3.4.0
+idna==3.10
+urllib3==2.3.0
+
+# Certificates (used by requests)
+certifi==2024.12.14
+
+# Signal management (optional)
+blinker==1.9.0

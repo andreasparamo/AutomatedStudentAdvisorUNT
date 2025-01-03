@@ -30,3 +30,6 @@ certifi==2024.12.14
 
 # Signal management (optional)
 blinker==1.9.0
+
+#tokenization
+nltk==3.6.5

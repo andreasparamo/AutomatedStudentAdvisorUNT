@@ -13,23 +13,26 @@ waitress==3.0.2
 python-dotenv==1.0.1
 
 # AI/ML and data processing
-tensorflow==2.13.0   # Add TensorFlow for the chatbot model
-numpy==1.24.0        # Numerical operations for preprocessing
-pandas==1.5.3        # Optional: Data handling for analytics or logging
+tensorflow==2.14.0   # Updated TensorFlow version
+numpy==1.25.2        # Updated numpy version
+pandas==2.1.1        # Updated pandas version
 
 # HTTP requests (if API integrations are needed)
-requests==2.32.3
+requests==2.31.0
 
 # Character encoding (used by requests)
-charset-normalizer==3.4.0
-idna==3.10
-urllib3==2.3.0
+charset-normalizer==3.3.0
+idna==3.4
+urllib3==2.0.4
 
 # Certificates (used by requests)
-certifi==2024.12.14
+certifi==2023.7.22
 
 # Signal management (optional)
-blinker==1.9.0
+blinker==1.6.2
 
-#tokenization
-nltk==3.6.5
+# Tokenization
+nltk==3.8.1
+
+# LLM
+openai==0.28.0

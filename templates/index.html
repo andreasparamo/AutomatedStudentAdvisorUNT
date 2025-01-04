@@ -22,12 +22,34 @@
         </div>
         <div class="input-container">
             <textarea 
-                class="message-input" 
-                placeholder="Message..."
-                rows="1"
+            class="message-input" 
+            placeholder="Message Student Advisor"
+            rows="1"
             ></textarea>
-            <button class="submit-button">Send</button>
+            <button class="submit-button" onclick="sendMessage()">Send</button>
+        </div>
+        <script>
+            function sendMessage() {
+            const input = document.querySelector('.message-input');
+            const message = input.value.trim();
+            if (message) {
+                const chatMessages = document.querySelector('.chat-messages');
+                const userMessage = document.createElement('div');
+                userMessage.classList.add('message', 'user');
+                userMessage.innerHTML = `<div class="message-content">${message}</div>`;
+                chatMessages.appendChild(userMessage);
+                input.value = '';
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            }
+        </script>
         </div>
     </div>
 </body>
 </html>
+<style>
+    .chat-messages {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+</style>

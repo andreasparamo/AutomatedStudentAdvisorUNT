@@ -1,20 +1,13 @@
-To run the program do the following: 
+To run the program in VS Code do the following: 
 
 
 step 1:
-in bash, change the directory to your path with the following 
- cd "your/path"
+open an .env file and get an api key from gemini 1.5 flash
+write this in your .env file.
+GENAI_API_KEY = (copy paste your api key)
 
 step 2:
-run the command
-pip install -r requirements.txt
+download live server extension. by Ritwick Dey
 
 step 3:
-activate the virtual environment.
-# On Windows
-.\venv\Scripts\activate
-
-# On macOS/Linux
-source venv/bin/activate
-
-step 4:
+run python file from bot.py, then ctrl+click from terminal to open environment.

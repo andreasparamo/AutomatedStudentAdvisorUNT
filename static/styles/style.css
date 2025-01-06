@@ -5,7 +5,7 @@ body {
     font-family: system-ui, -apple-system, sans-serif;
     height: 100vh;
     display: flex;
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #e0e0e0;
 }
 
@@ -17,8 +17,7 @@ body {
     margin: 0 auto;
     height: 100%;
     background-color: #1e1e1e;
-    border: 1px solid #2c2c2c;
-    border-radius: 8px;
+    
 }
 
 /* Messages area */
@@ -62,6 +61,7 @@ body {
     padding: 24px;
     background-color: #1e1e1e;
     position: relative;
+    
 }
 
 .message-input {
@@ -103,3 +103,40 @@ body {
 .submit-button:hover {
     background-color: #1d4ed8;
 }
+
+/* General scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  /* Track styling */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100; /* Color of the track */
+  }
+  
+  /* Handle styling */
+  ::-webkit-scrollbar-thumb {
+    background: #88888823; /* Color of the handle */
+    border-radius: 4px; /* Rounded corners for the handle */
+  }
+  
+  /* Handle hover styling */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5555553e; /* Darker color on hover */
+  }
+  
+  /* For Firefox (more limited styling options) */
+  /* This will style the scrollbar for the entire page */
+  /* You might want to be more specific with selectors */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #88888814 hwb(0 95% 5% / 0.003);
+  }
+  
+  /* Example for styling a specific div */
+  .scrollable-div {
+    overflow-y: auto; /* Required for scrollbars to appear */
+    max-height: 200px; /* Example height */
+    scrollbar-width: thin;
+    scrollbar-color: #88888800 #f1f1f127;
+  }

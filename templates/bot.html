@@ -48,9 +48,15 @@
                 const data = await response.json();
                 const botMessage = document.createElement('div');
                 botMessage.classList.add('message', 'assistant');
-                botMessage.innerHTML = `<div class="message-content">${data.response}</div>`;
+                
                 chatMessages.appendChild(botMessage);
                 chatMessages.scrollTop = chatMessages.scrollHeight;
+
+                for (let char of data.response) {
+                    await new Promise(resolve => setTimeout(resolve, 5));
+                    botMessage.innerHTML += char;
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
             }
         }
     </script>

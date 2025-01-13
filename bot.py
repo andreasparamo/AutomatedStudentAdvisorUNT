@@ -34,9 +34,12 @@ def index():
 @app.route('/get-response', methods=['POST'])
 def get_response():
     user_message = request.json.get('message')
-    # Here you can implement your logic to generate a response based on the user_message
+
+
     response = model.generate_content(user_message)
-    bot_response = response.text
+
+    
+    bot_response = response.text.replace('*', ' ')
     return jsonify(response=bot_response)
 
 if __name__ == '__main__':
